@@ -6,6 +6,7 @@ require_once __DIR__ . "/GetConnection.php";
 
 $connection = getConnection();
 
+// Menampilkan data dari database
 $sql = "SELECT id, name, email FROM customers";
 $results = $connection->query($sql);
 
