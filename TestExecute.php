@@ -12,6 +12,11 @@ $sql = <<<SQL
     VALUES ('seena', 'seena', 'seena@test.com');
 SQL;
 
-$connection->exec($sql);
+// $admin = <<<SQL
+//     INSERT INTO admin(username, password)
+//     VALUES ('eunha', 'eunha@pass.com');
+// SQL;
+
+$connection->exec($admin);
 
 $connection = null;
