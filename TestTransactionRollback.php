@@ -11,6 +11,6 @@ $connection->exec("INSERT INTO comments(email, comment) VALUE('budi@rocket.com',
 $connection->exec("INSERT INTO comments(email, comment) VALUE('seena@rocket.com', 'Hi seena')");
 $connection->exec("INSERT INTO comments(email, comment) VALUE('diko@rocket.com', 'Hi diko')");
 
-$connection->commit();
+$connection->rollBack();
 
 $connection = null;
